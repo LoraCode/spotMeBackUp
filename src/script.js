@@ -495,7 +495,7 @@ const applyCalc = () => {
         //   weekOne.classList.add('animated', 'fadeInLeft', 'slower', 'delay-1s');
         //   weekTwo.classList.add('animated', 'fadeInLeft', 'slower', 'delay-2s');
         //   month.classList.add('animated', 'fadeInLeft', 'slower', 'delay-3s');
-        // }
+        }
         break;
       case 'lend?':
         if (e.value !== '') {
