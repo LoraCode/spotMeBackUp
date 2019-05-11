@@ -478,46 +478,11 @@ const applyCalc = () => {
     const mobile = /iPhone|iPad|iPod|Android|BlackBerry|Windows Phone/i.test(navigator.userAgent);
     if (mobile === true) {
       alert('gotcha bitch');
-      switch (filterStr('How much would you like to ', howMuch.innerText)) {
-        case 'borrow?':
-          if (e.value !== '') {
-            pay.textContent = 'Repayment timeframe options + interest:';
-            pay.style.paddingLeft = '3vw';
-            weekOne.textContent = `1 Week = ${filterNum(input.value * 1.01)}`;
-            weekOne.style.paddingLeft = '5vw';
-            weekTwo.textContent = `2 Weeks = ${filterNum(input.value * 1.025)}`;
-            weekTwo.style.paddingLeft = '5vw';
-            month.textContent = `1 Month = ${filterNum(input.value * 1.06)}`;
-            month.style.paddingLeft = '5vw';
-          //   pay.classList.add('animated', 'fadeInLeft', 'slower');
-          //   weekOne.classList.add('animated', 'fadeInLeft', 'slower', 'delay-1s');
-          //   weekTwo.classList.add('animated', 'fadeInLeft', 'slower', 'delay-2s');
-          //   month.classList.add('animated', 'fadeInLeft', 'slower', 'delay-3s');
-          }
-          break;
-        case 'lend?':
-          if (e.value !== '') {
-            pay.textContent = 'Your money back + interest:';
-            pay.style.paddingLeft = '7.5vw';
-            weekOne.textContent = `1 Week = ${filterNum(input.value * 1.007)}`;
-            weekOne.style.paddingLeft = '5vw';
-            weekTwo.textContent = `2 Weeks = ${filterNum(input.value * 1.018)}`;
-            weekTwo.style.paddingLeft = '5vw';
-            month.textContent = `1 Month = ${filterNum(input.value * 1.045)}`;
-            month.style.paddingLeft = '5vw';
-          //   pay.classList.add('animated', 'fadeInLeft', 'slower');
-          //   weekOne.classList.add('animated', 'fadeInLeft', 'slower', 'delay-1s');
-          //   weekTwo.classList.add('animated', 'fadeInLeft', 'slower', 'delay-2s');
-          //   month.classList.add('animated', 'fadeInLeft', 'slower', 'delay-3s');
-          }
-          break;
-        // No Default
-      }
     }
     // eslint-disable-next-line default-case
     switch (filterStr('How much would you like to ', howMuch.innerText)) {
       case 'borrow?':
-        if (e.value !== '') {
+        // if (e.value !== '') {
           pay.textContent = 'Repayment timeframe options + interest:';
           pay.style.paddingLeft = '3vw';
           weekOne.textContent = `1 Week = ${filterNum(input.value * 1.01)}`;
@@ -530,10 +495,10 @@ const applyCalc = () => {
         //   weekOne.classList.add('animated', 'fadeInLeft', 'slower', 'delay-1s');
         //   weekTwo.classList.add('animated', 'fadeInLeft', 'slower', 'delay-2s');
         //   month.classList.add('animated', 'fadeInLeft', 'slower', 'delay-3s');
-        }
+        // }
         break;
       case 'lend?':
-        if (e.value !== '') {
+        // if (e.value !== '') {
           pay.textContent = 'Your money back + interest:';
           pay.style.paddingLeft = '7.5vw';
           weekOne.textContent = `1 Week = ${filterNum(input.value * 1.007)}`;
@@ -546,7 +511,7 @@ const applyCalc = () => {
         //   weekOne.classList.add('animated', 'fadeInLeft', 'slower', 'delay-1s');
         //   weekTwo.classList.add('animated', 'fadeInLeft', 'slower', 'delay-2s');
         //   month.classList.add('animated', 'fadeInLeft', 'slower', 'delay-3s');
-        }
+        // }
         break;
       // No Default
     }
