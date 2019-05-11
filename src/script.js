@@ -265,7 +265,7 @@ const renderSecondChildren = () => {
   control.className = 'control has-icons-left';
   const numInput = document.createElement('input');
   numInput.className = 'input is-success';
-  numInput.type = 'number';
+  numInput.type = 'tel';
   numInput.inputMode = 'numeric';
   numInput.pattern = '[0-9]*';
   numInput.placeholder = 'Enter amount';
