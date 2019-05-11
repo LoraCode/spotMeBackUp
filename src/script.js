@@ -491,11 +491,11 @@ const applyCalc = () => {
           weekTwo.style.paddingLeft = '5vw';
           month.textContent = `1 Month = ${filterNum(input.value * 1.06)}`;
           month.style.paddingLeft = '5vw';
-          pay.classList.add('animated', 'fadeInLeft', 'slower');
-          weekOne.classList.add('animated', 'fadeInLeft', 'slower', 'delay-1s');
-          weekTwo.classList.add('animated', 'fadeInLeft', 'slower', 'delay-2s');
-          month.classList.add('animated', 'fadeInLeft', 'slower', 'delay-3s');
-        }
+        //   pay.classList.add('animated', 'fadeInLeft', 'slower');
+        //   weekOne.classList.add('animated', 'fadeInLeft', 'slower', 'delay-1s');
+        //   weekTwo.classList.add('animated', 'fadeInLeft', 'slower', 'delay-2s');
+        //   month.classList.add('animated', 'fadeInLeft', 'slower', 'delay-3s');
+        // }
         break;
       case 'lend?':
         if (e.value !== '') {
@@ -507,10 +507,10 @@ const applyCalc = () => {
           weekTwo.style.paddingLeft = '5vw';
           month.textContent = `1 Month = ${filterNum(input.value * 1.045)}`;
           month.style.paddingLeft = '5vw';
-          pay.classList.add('animated', 'fadeInLeft', 'slower');
-          weekOne.classList.add('animated', 'fadeInLeft', 'slower', 'delay-1s');
-          weekTwo.classList.add('animated', 'fadeInLeft', 'slower', 'delay-2s');
-          month.classList.add('animated', 'fadeInLeft', 'slower', 'delay-3s');
+        //   pay.classList.add('animated', 'fadeInLeft', 'slower');
+        //   weekOne.classList.add('animated', 'fadeInLeft', 'slower', 'delay-1s');
+        //   weekTwo.classList.add('animated', 'fadeInLeft', 'slower', 'delay-2s');
+        //   month.classList.add('animated', 'fadeInLeft', 'slower', 'delay-3s');
         }
         break;
       // No Default
