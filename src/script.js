@@ -269,6 +269,7 @@ const renderSecondChildren = () => {
   numInput.inputMode = 'numeric';
   numInput.pattern = '[0-9]*';
   numInput.placeholder = 'Enter amount';
+  numInput.formNoValidate;
   const span = document.createElement('span');
   span.className = 'icon is-small is-left';
   const icon = document.createElement('i');
