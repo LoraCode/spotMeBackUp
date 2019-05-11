@@ -265,11 +265,10 @@ const renderSecondChildren = () => {
   control.className = 'control has-icons-left';
   const numInput = document.createElement('input');
   numInput.className = 'input is-success';
-  numInput.type = 'tel';
+  numInput.type = 'number';
   numInput.inputMode = 'numeric';
   numInput.pattern = '[0-9]*';
   numInput.placeholder = 'Enter amount';
-  numInput.formNoValidate;
   const span = document.createElement('span');
   span.className = 'icon is-small is-left';
   const icon = document.createElement('i');
@@ -480,7 +479,7 @@ const applyCalc = () => {
     if (e.keyCode === 13) {
     const mobile = /iPhone|iPad|iPod|Android|BlackBerry|Windows Phone/i.test(navigator.userAgent);
     if (mobile === true) {
-      alert('gotcha bitch');
+      alert('Event has Fired');
     }
     // eslint-disable-next-line default-case
     switch (filterStr('How much would you like to ', howMuch.innerText)) {
