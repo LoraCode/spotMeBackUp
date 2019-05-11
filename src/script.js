@@ -486,13 +486,13 @@ const applyCalc = () => {
           pay.textContent = 'Repayment timeframe options + interest:';
           console.log(pay);
           pay.style.paddingLeft = '3vw';
-          weekOne.textContent = `1 Week = ${filterNum(input.value * 1.01)}`;
+          weekOne.innerText = `1 Week = ${filterNum(input.value * 1.01)}`;
           weekOne.style.paddingLeft = '5vw';
           console.log(weekOne);
-          weekTwo.textContent = `2 Weeks = ${filterNum(input.value * 1.025)}`;
+          weekTwo.innerText = `2 Weeks = ${filterNum(input.value * 1.025)}`;
           weekTwo.style.paddingLeft = '5vw';
           console.log(weekTwo);
-          month.textContent = `1 Month = ${filterNum(input.value * 1.06)}`;
+          month.innerText = `1 Month = ${filterNum(input.value * 1.06)}`;
           month.style.paddingLeft = '5vw';
           console.log(month);
         //   pay.classList.add('animated', 'fadeInLeft', 'slower');
@@ -505,11 +505,11 @@ const applyCalc = () => {
         if (e.value !== '') {
           pay.textContent = 'Your money back + interest:';
           pay.style.paddingLeft = '7.5vw';
-          weekOne.textContent = `1 Week = ${filterNum(input.value * 1.007)}`;
+          weekOne.innerText = `1 Week = ${filterNum(input.value * 1.007)}`;
           weekOne.style.paddingLeft = '5vw';
-          weekTwo.textContent = `2 Weeks = ${filterNum(input.value * 1.018)}`;
+          weekTwo.innerText = `2 Weeks = ${filterNum(input.value * 1.018)}`;
           weekTwo.style.paddingLeft = '5vw';
-          month.textContent = `1 Month = ${filterNum(input.value * 1.045)}`;
+          month.innerText = `1 Month = ${filterNum(input.value * 1.045)}`;
           month.style.paddingLeft = '5vw';
         //   pay.classList.add('animated', 'fadeInLeft', 'slower');
         //   weekOne.classList.add('animated', 'fadeInLeft', 'slower', 'delay-1s');
